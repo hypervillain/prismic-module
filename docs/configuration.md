@@ -46,6 +46,13 @@ By default, it will load the link resolver from `~/app/prismic/link-resolver.js`
 
 By default, it will load the link resolver from `~/app/prismic/html-serializer.js`, you can customize this path directly or give a function.
 
+### `disableGenerator`
+
+- Type: `Boolean`
+- Default: `false`
+
+By default and if `apiOptions.routes` is defined, the module will call a hook before generate and fetch your repository urls. Set to `false` if you want to disable this behaviour.
+
 ## Kitchen Sink
 
 `nuxt.config.js`:
